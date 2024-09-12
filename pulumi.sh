@@ -2,11 +2,11 @@
 
 pulumi up -f -s dev
 
-echo $?
-
 if [ $? -ne 0 ]; then
-  echo "error occurred when running pulumi command for ${project_name}"
+  echo "error occurred when running pulumi command"
   exit 1
+else 
+    echo "Pulumi run successfully"
 fi
 
 shell_event_handler() {
