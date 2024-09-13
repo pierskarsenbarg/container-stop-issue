@@ -32,4 +32,5 @@ COPY index.ts .
 COPY pulumi.sh .
 RUN chmod +x ./pulumi.sh
 
-CMD [ "./pulumi.sh" ] 
+# CMD [ "./pulumi.sh" ] 
+CMD [ "pulumi", "up", "-f", "-s", "demo/dev" ]
