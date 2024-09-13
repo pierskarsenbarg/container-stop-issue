@@ -12,3 +12,4 @@ As long as you have access to the demo org in Pulumi Cloud, this uses ESC for cr
 1. Build the docker image: `docker build -t container-stop .`
 1. Run the container: `docker run -e PULUMI_ACCESS_TOKEN=$PULUMI_ACCESS_TOKEN --name container-stop -v "$(pwd)":/pulumi/projects container-stop`
 1. In another terminal window (or docker desktop or other GUI if you're using that) stop the container: `docker stop container-stop`
+1. See that no code is returned
